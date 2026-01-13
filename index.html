@@ -379,18 +379,18 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" action="https://script.google.com/macros/s/AKfycbx-oav6hOignZYCYUYEeONbN_5JQwGVSqt54txJEdRrbtkuPshr_CwQJcHBMgBOirz-/exec" method="post" target="hidden_iframe">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="tel" name="phone" placeholder="Mobile Number" pattern="\d{10}" minlength="10" maxlength="10" inputmode="numeric" title="Enter Valid number." required>
                     </div>
                     <div class="form-group">
-                        <select required>
+                        <select name="scrapType" required>
                             <option value="">Select Scrap Type</option>
                             <option value="electronics">Electronics</option>
                             <option value="ac">AC & Appliances</option>
@@ -402,10 +402,13 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Tell us about your scrap (optional)" rows="4"></textarea>
+                        <textarea name="message" placeholder="Tell us about your scrap (optional)" rows="4"></textarea>
                     </div>
                     <button type="submit" class="cta-btn primary-btn">Send Request</button>
                 </form>
+
+                <iframe name="hidden_iframe" style="display:none;"></iframe>
+
             </div>
         </div>
     </section>

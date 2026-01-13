@@ -77,33 +77,23 @@ window.addEventListener('resize', () => {
 
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        // Form will submit to Google Apps Script via hidden iframe
+        // Show success message after a short delay
+        setTimeout(() => {
+            showSuccessMessage();
+            contactForm.reset();
+        }, 500);
+    });
+}
 
-    // Get form data
-    const formData = new FormData(contactForm);
-    const name = formData.get('name') || document.querySelector('input[placeholder="Your Name"]').value;
-    const email = formData.get('email') || document.querySelector('input[placeholder="Your Email"]').value;
-    const phone = formData.get('phone') || document.querySelector('input[placeholder="Phone Number"]').value;
-    const scrapType = document.querySelector('select').value;
-    const message = document.querySelector('textarea').value;
-
-    // Validate form
-    if (!name || !email || !phone || !scrapType) {
-        alert('Please fill in all required fields');
-        return;
+// Listen to messages from the Google Apps Script (if it sends one)
+window.addEventListener('message', (event) => {
+    if (event.data === 'success') {
+        showSuccessMessage();
+        if (contactForm) contactForm.reset();
     }
-
-    // Create mailto link (simple form submission without backend)
-    const mailtoLink = `mailto:info@quickscrap.com?subject=Scrap Pickup Request - ${scrapType}&body=Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AScrap Type: ${scrapType}%0A%0AMessage:%0A${message}`;
-
-    // Alternative: Show success message
-    showSuccessMessage();
-
-    // Reset form
-    contactForm.reset();
-
-    // For production, you would send data to a backend or use a service like Formspree
 });
 
 function showSuccessMessage() {
