@@ -1,0 +1,502 @@
+/* ========================================
+   Service Page Styles
+   ======================================== */
+
+.service-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.service-hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.service-tagline {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.service-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* ========================================
+   Table of Contents Section
+   ======================================== */
+
+.toc-section {
+    padding: 60px 20px;
+    background-color: var(--background-light);
+}
+
+.toc-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.toc-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border: 2px solid transparent;
+}
+
+.toc-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.15);
+}
+
+.toc-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.toc-item h3 {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+/* ========================================
+   Service Content Section
+   ======================================== */
+
+.service-content {
+    padding: 40px 20px;
+    background-color: var(--white);
+}
+
+.service-article {
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.service-article:last-child {
+    border-bottom: none;
+}
+
+.article-header {
+    margin-bottom: 2rem;
+}
+
+.article-header h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.article-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.article-image {
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.article-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+}
+
+.article-content {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.article-content h3 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-content p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* ========================================
+   Lists & Tables
+   ======================================== */
+
+.features-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.features-list li {
+    padding: 0.8rem 0;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.benefits-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.benefits-list li {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.08) 0%, rgba(0, 191, 165, 0.08) 100%);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--text-dark);
+}
+
+.process-list {
+    margin: 2rem 0;
+    padding-left: 0;
+    list-style: none;
+    counter-reset: item;
+}
+
+.process-list li {
+    counter-increment: item;
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
+    position: relative;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.process-list li:before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--primary-color);
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.price-table {
+    overflow-x: auto;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.price-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+}
+
+.price-table th {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 1.2rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.price-table td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-dark);
+}
+
+.price-table tr:hover {
+    background-color: var(--background-light);
+}
+
+.price-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ========================================
+   Brands Grid
+   ======================================== */
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.brand-badge {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 0.8rem 1rem;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.brand-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+}
+
+/* ========================================
+   Contact CTA Section
+   ======================================== */
+
+.contact-cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 4rem 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 3rem 0;
+}
+
+.cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .cta-btn {
+    min-width: 180px;
+}
+
+/* ========================================
+   Responsive Design - Tablets
+   ======================================== */
+
+@media (max-width: 768px) {
+    .service-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-tagline {
+        font-size: 1.2rem;
+    }
+
+    .service-subtitle {
+        font-size: 1rem;
+    }
+
+    .article-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .toc-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .toc-item {
+        padding: 1.5rem;
+    }
+
+    .toc-item i {
+        font-size: 2rem;
+    }
+
+    .service-content {
+        padding: 20px 0;
+    }
+
+    .service-article {
+        padding: 1.5rem 0;
+    }
+
+    .article-image img {
+        max-width: 100%;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .cta-btn {
+        width: 100%;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .brand-badge {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   Responsive Design - Mobile
+   ======================================== */
+
+@media (max-width: 480px) {
+    .service-hero {
+        padding: 40px 15px;
+    }
+
+    .service-hero-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .service-tagline {
+        font-size: 1rem;
+    }
+
+    .service-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .toc-section {
+        padding: 40px 15px;
+    }
+
+    .toc-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .toc-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .toc-item {
+        padding: 1.2rem;
+    }
+
+    .toc-item i {
+        font-size: 1.8rem;
+    }
+
+    .service-content {
+        padding: 20px 15px;
+    }
+
+    .article-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .article-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .article-content {
+        font-size: 0.95rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+
+    .features-list li,
+    .benefits-list li {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .process-list li {
+        padding-left: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .process-list li:before {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .price-table {
+        font-size: 0.85rem;
+    }
+
+    .price-table th,
+    .price-table td {
+        padding: 0.8rem;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .brand-badge {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .contact-cta-section {
+        padding: 2rem 15px;
+        border-radius: 10px;
+        margin: 2rem 0;
+    }
+
+    .cta-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .cta-content p {
+        font-size: 0.95rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .cta-buttons .cta-btn {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
