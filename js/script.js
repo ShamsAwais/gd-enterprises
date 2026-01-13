@@ -247,6 +247,25 @@ document.querySelectorAll('.cta-btn, .float-btn').forEach(btn => {
 });
 
 // ========================================
+// FAQ Collapsible Sections
+// ========================================
+
+function toggleFaq(button) {
+    const faqItem = button.parentElement;
+    const isActive = faqItem.classList.contains('active');
+
+    // Close all other FAQ items (accordion behavior)
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Toggle current item
+    if (!isActive) {
+        faqItem.classList.add('active');
+    }
+}
+
+// ========================================
 // Utility: Add class to navbar on scroll
 // ========================================
 
