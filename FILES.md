@@ -1,9 +1,9 @@
-# QuickScrap Website - Complete File Directory
+# G D Enterprises Website - Complete File Directory
 
 ## 📁 Project Structure
 
 ```
-QuickScrap/
+G D Enterprises/
 │
 ├── 📄 index.html                    (Main Home Page)
 │
@@ -365,7 +365,7 @@ Service page details?      → SERVICE-PAGES.md
 ### Update Something
 ```
 Contact number?           → Find "+919999999999" in .html files
-Email address?           → Find "info@quickscrap.com" in .html files
+Email address?           → Find "mdmazharuddin05@gmail.com" in .html files
 Colors?                  → Edit CSS variables in styles.css
 Phone number in footer?  → Update footer section in each file
 Services list?           → Update services-grid in index.html
@@ -374,13 +374,13 @@ Services list?           → Update services-grid in index.html
 ### Deploy to Live
 ```
 1. Open PowerShell
-2. cd c:\Users\shams\Projects\QuickScrap
+2. cd c:\Users\shams\Projects\G D Enterprises
 3. git status (check changes)
 4. git add .
 5. git commit -m "Your message here"
 6. git push origin main
 7. Wait 2-5 minutes
-8. Visit: https://username.github.io/QuickScrap
+8. Visit: https://username.github.io/G D Enterprises
 ```
 
 ---
@@ -423,7 +423,7 @@ Services list?           → Update services-grid in index.html
 
 ## 🎓 Version Info
 
-- **Project:** QuickScrap Static Website
+- **Project:** G D Enterprises Static Website
 - **Version:** 1.0 (Pilot)
 - **Created:** January 2026
 - **Status:** Complete & Ready for Deployment

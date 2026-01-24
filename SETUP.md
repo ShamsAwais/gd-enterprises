@@ -1,12 +1,12 @@
-# QuickScrap Website - Setup & Deployment Guide
+# G D Enterprises Website - Setup & Deployment Guide
 
 ## ✅ What Has Been Created
 
-Your complete QuickScrap website is ready! Here's what's included:
+Your complete G D Enterprises website is ready! Here's what's included:
 
 ### 📁 Project Files
 ```
-QuickScrap/
+G D Enterprises/
 ├── 📄 index.html          (Main website - 400+ lines, fully responsive)
 ├── 📁 css/
 │   └── styles.css         (1000+ lines, mobile-first design)
@@ -81,7 +81,7 @@ QuickScrap/
 - Mobile optimized
 
 ### 9. **Footer** (Comprehensive)
-- About QuickScrap
+- About G D Enterprises
 - Quick links
 - Service areas
 - Contact information
@@ -95,7 +95,7 @@ QuickScrap/
 ### **Option A: Test Locally First**
 
 1. **Open in Browser**
-   - Navigate to: `c:\Users\shams\Projects\QuickScrap\index.html`
+   - Navigate to: `c:\Users\shams\Projects\G D Enterprises\index.html`
    - Right-click → Open with Browser
    - Or drag the file into a browser window
 
@@ -114,7 +114,7 @@ QuickScrap/
 
 #### **Step 2: Create New Repository**
 1. Click **"+"** → **New repository**
-2. Repository name: `QuickScrap` (or choose your own)
+2. Repository name: `G D Enterprises` (or choose your own)
 3. Description: "Modern scrap business website"
 4. Choose **Public** (for GitHub Pages)
 5. Click **Create repository**
@@ -125,7 +125,7 @@ Open PowerShell in your project folder:
 
 ```powershell
 # Navigate to project
-cd c:\Users\shams\Projects\QuickScrap
+cd c:\Users\shams\Projects\G D Enterprises
 
 # Initialize and configure git (if not done)
 git init
@@ -136,10 +136,10 @@ git config user.email "your.email@example.com"
 git add .
 
 # Create first commit
-git commit -m "Initial QuickScrap website - Pilot version"
+git commit -m "Initial G D Enterprises website - Pilot version"
 
 # Add remote repository
-git remote add origin https://github.com/YOUR_USERNAME/QuickScrap.git
+git remote add origin https://github.com/YOUR_USERNAME/G D Enterprises.git
 
 # Rename branch to main (GitHub default)
 git branch -M main
@@ -163,7 +163,7 @@ git push -u origin main
 
 After 1-2 minutes, your site will be live at:
 ```
-https://YOUR_USERNAME.github.io/QuickScrap
+https://YOUR_USERNAME.github.io/G D Enterprises
 ```
 
 ---
@@ -174,7 +174,7 @@ Before deploying, update these placeholders:
 
 ### **Contact Information**
 - [ ] Phone: `+919999999999` → Your phone
-- [ ] Email: `info@quickscrap.com` → Your email
+- [ ] Email: `mdmazharuddin05@gmail.com` → Your email
 - [ ] WhatsApp: `919999999999` → Your WhatsApp number
 - [ ] Address: `Hyderabad, Telangana, India` → Your address
 
@@ -355,7 +355,7 @@ Your site includes:
 
 ---
 
-**Your QuickScrap website is ready to go! 🚀**
+**Your G D Enterprises website is ready to go! 🚀**
 
 Good luck with your scrap business! 
 

@@ -1,4 +1,4 @@
-# QuickScrap - Scrap Business Website
+# G D Enterprises - Scrap Business Website
 
 A modern, responsive static website for a scrap buying business built with HTML, CSS, and JavaScript. Designed for mobile-first experience and easy deployment to GitHub Pages.
 
@@ -35,7 +35,7 @@ A modern, responsive static website for a scrap buying business built with HTML,
 ## Project Structure
 
 ```
-QuickScrap/
+G D Enterprises/
 ├── index.html           # Main HTML file
 ├── css/
 │   └── styles.css      # All responsive styles
@@ -50,8 +50,8 @@ QuickScrap/
 
 1. **Clone or Download the Project**
    ```bash
-   git clone https://github.com/yourusername/QuickScrap.git
-   cd QuickScrap
+   git clone https://github.com/yourusername/G D Enterprises.git
+   cd G D Enterprises
    ```
 
 2. **Open in Browser**
@@ -75,10 +75,10 @@ QuickScrap/
 
 ### Update Contact Information
 Edit the following in `index.html`:
-- Phone number: `+919999999999`
-- Email: `info@quickscrap.com`
+- Phone number: `+918143695940`
+- Email: `mdmazharuddin05@gmail.com`
 - Address: `Hyderabad, Telangana, India`
-- WhatsApp link: `https://wa.me/919999999999`
+- WhatsApp link: `https://wa.me/918143695940`
 
 ### Change Colors
 Edit CSS variables in `css/styles.css`:
@@ -107,21 +107,21 @@ Replace all placeholder text with your actual business details:
 
 ### Step 1: Initialize Git Repository
 ```bash
-cd c:\Users\shams\Projects\QuickScrap
+cd c:\Users\shams\Projects\G D Enterprises
 git init
 git add .
-git commit -m "Initial QuickScrap website commit"
+git commit -m "Initial G D Enterprises website commit"
 ```
 
 ### Step 2: Create GitHub Repository
 1. Go to [GitHub.com](https://github.com)
 2. Click "New Repository"
-3. Name it `QuickScrap` (or your preferred name)
+3. Name it `G D Enterprises` (or your preferred name)
 4. **Important:** Repository name can be anything for custom domain, but for user/org pages use `username.github.io`
 
 ### Step 3: Connect Local Repo to GitHub
 ```bash
-git remote add origin https://github.com/yourusername/QuickScrap.git
+git remote add origin https://github.com/yourusername/G D Enterprises.git
 git branch -M main
 git push -u origin main
 ```
@@ -134,11 +134,11 @@ git push -u origin main
    - Branch: Select **main** and **/root** folder
    - Click **Save**
 4. Wait 1-2 minutes for deployment
-5. Your site will be live at: `https://yourusername.github.io/QuickScrap`
+5. Your site will be live at: `https://yourusername.github.io/G D Enterprises`
 
 ### Step 5: Set Custom Domain (Optional)
 1. In GitHub repo Settings → Pages
-2. Add your custom domain (e.g., `quickscrap.com`)
+2. Add your custom domain (e.g., `G D Enterprises.com`)
 3. Update your domain's DNS settings to point to GitHub Pages
 4. GitHub will provide DNS instructions
 

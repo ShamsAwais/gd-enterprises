@@ -1,4 +1,4 @@
-# QuickScrap - Quick Reference Guide
+# G D Enterprises - Quick Reference Guide
 
 ## 🔧 Common Customizations
 
@@ -16,7 +16,7 @@ Find and replace:
 
 ### 2. Change Email Address
 **Find and replace:**
-- `info@quickscrap.com` → Your email
+- `mdmazharuddin05@gmail.com` → Your email
 
 **In:**
 - `index.html` (contact section, footer)
@@ -30,10 +30,12 @@ Find and replace:
 <div class="footer-section">
     <h3>Service Areas</h3>
     <ul>
+        <li><a href="#">Musheerabad</a></li>
         <li><a href="#">Banjara Hills</a></li>
         <li><a href="#">Jubilee Hills</a></li>
         <li><a href="#">Kondapur</a></li>
         <li><a href="#">Manikonda</a></li>
+        
     </ul>
 </div>
 ```
@@ -133,8 +135,8 @@ Replace with real customer testimonials.
 
 ```html
 <div class="logo">
-    <img src="assets/logo.png" alt="QuickScrap" style="width: 40px; height: auto;">
-    <span>QuickScrap</span>
+    <img src="assets/logo.png" alt="G D Enterprises" style="width: 40px; height: auto;">
+    <span>G D Enterprises</span>
 </div>
 ```
 
@@ -181,7 +183,7 @@ Replace with real customer testimonials.
 
 1. **Open project:**
    - File → Open Folder
-   - Select `c:\Users\shams\Projects\QuickScrap`
+   - Select `c:\Users\shams\Projects\G D Enterprises`
 
 2. **Edit files:**
    - Click file in Explorer
@@ -207,7 +209,7 @@ Replace with real customer testimonials.
 After making changes:
 
 ```powershell
-cd c:\Users\shams\Projects\QuickScrap
+cd c:\Users\shams\Projects\G D Enterprises
 
 # Check what changed
 git status

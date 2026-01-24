@@ -1,4 +1,4 @@
-# QuickScrap Service Pages - Complete Documentation
+# G D Enterprises Service Pages - Complete Documentation
 
 ## 📋 Overview
 
@@ -302,7 +302,7 @@ Each page includes:
 ### Before Going Live
 Replace:
 - [ ] Phone: +919999999999 → your actual number
-- [ ] Email: info@quickscrap.com → your email
+- [ ] Email: mdmazharuddin05@gmail.com → your email
 - [ ] Pricing: with actual market rates
 - [ ] Service areas: with your coverage zones
 - [ ] Testimonials: with real customer reviews
