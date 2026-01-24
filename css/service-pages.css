@@ -312,6 +312,35 @@
 }
 
 /* ========================================
+   Google Maps Section
+   ======================================== */
+
+.map-section {
+    padding: 60px 20px;
+    background-color: var(--background-light);
+}
+
+.map-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+}
+
+/* ========================================
    Responsive Design - Tablets
    ======================================== */
 
