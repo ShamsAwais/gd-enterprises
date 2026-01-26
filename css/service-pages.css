@@ -3,10 +3,18 @@
    ======================================== */
 
 .service-hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroMainBG.png') center/cover no-repeat;
     color: var(--white);
     padding: 60px 20px;
     text-align: center;
+    position: relative;
+}
+
+.service-hero-content h1,
+.service-hero-content .service-tagline,
+.service-hero-content .service-subtitle {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .service-hero-content h1 {
@@ -528,4 +536,68 @@
         padding: 10px 20px;
         font-size: 0.9rem;
     }
+}
+
+/* ========================================
+   Service Page Specific Backgrounds
+   ======================================== */
+
+/* Electronics Page */
+body[data-page="electronics"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroElectronicBG.png') center/cover no-repeat;
+}
+
+/* AC & Appliances Page */
+body[data-page="ac-appliances"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroAcBG.jpg') center/cover no-repeat;
+}
+
+/* Metal Scrap Page */
+body[data-page="metal-scrap"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroMetalBG.jpg') center/cover no-repeat;
+}
+
+/* Batteries Page */
+body[data-page="batteries"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroBatteryBG.jpg') center/cover no-repeat;
+}
+
+/* Furniture Page */
+body[data-page="furniture"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroFurnitureBG.jpg') center/cover no-repeat;
+}
+
+/* Vehicle Parts Page */
+body[data-page="vehicle-parts"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroVehicleBG.jpg') center/cover no-repeat;
+}
+
+/* Waste Paper Page */
+body[data-page="waste-paper"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroNewsPaperBG.jpg') center/cover no-repeat;
+}
+
+/* Electrical Waste Page */
+body[data-page="electrical-waste"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroElectricalBG.jpg') center/cover no-repeat;
+}
+
+/* Construction Waste Page */
+body[data-page="construction-waste"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroConstructionBG.jpg') center/cover no-repeat;
+}
+
+/* Office Demolition Page */
+body[data-page="office-demolition"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroOfficeDemolitionBG.jpg') center/cover no-repeat;
 }
