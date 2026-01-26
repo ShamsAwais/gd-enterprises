@@ -6,6 +6,9 @@
     <meta name="description" content="G D Enterprises Vehicle Parts - Buy old car parts, bike parts, and industrial equipment scrap in Hyderabad">
     <meta name="keywords" content="sell car parts, sell bike parts, vehicle scrap, spare parts, Hyderabad">
     <title>Vehicle Parts Scrap - G D Enterprises</title>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/logo.png" as="image" type="image/png">
+    <link rel="preload" href="assets/HeroVehicleBG.jpg" as="image" type="image/jpeg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/service-pages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,7 +19,7 @@
         <div class="container">
             <div class="navbar-content">
                 <a href="index.html" class="logo">
-                    <img src="assets/logo.png" alt="G D Enterprises Logo" style="height: 60px; width: auto;">
+                    <img src="assets/logo.png" alt="G D Enterprises Logo" style="height: 60px; width: auto;" fetchpriority="high" decoding="async">
                 </a>
                 <button class="mobile-toggle" id="mobileToggle">
                     <span></span>

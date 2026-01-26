@@ -545,7 +545,7 @@
 /* Electronics Page */
 body[data-page="electronics"] .service-hero {
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
-                url('../assets/HeroElectronicBG.png') center/cover no-repeat;
+                url('../assets/HeroElectronicBG.jpg') center/cover no-repeat;
 }
 
 /* AC & Appliances Page */

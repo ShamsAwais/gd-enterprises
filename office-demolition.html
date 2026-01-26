@@ -6,6 +6,9 @@
     <meta name="description" content="G D Enterprises Office Demolition - Complete office dismantling, interior removal, and furniture clearance in Hyderabad">
     <meta name="keywords" content="office demolition, office dismantling, interior removal, furniture clearance, Hyderabad">
     <title>Office Demolition & Dismantling - G D Enterprises</title>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/logo.png" as="image" type="image/png">
+    <link rel="preload" href="assets/HeroOfficeDemolitionBG.jpg" as="image" type="image/jpeg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/service-pages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,7 +19,7 @@
         <div class="container">
             <div class="navbar-content">
                 <a href="index.html" class="logo">
-                    <img src="assets/logo.png" alt="G D Enterprises Logo" style="height: 60px; width: auto;">
+                    <img src="assets/logo.png" alt="G D Enterprises Logo" style="height: 60px; width: auto;" fetchpriority="high" decoding="async">
                 </a>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html#home">Home</a></li>
