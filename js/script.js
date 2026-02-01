@@ -137,19 +137,44 @@ let currentTestimonialIndex = 0;
 
 function showTestimonial(index) {
     const cards = document.querySelectorAll('.testimonial-card');
+    const carousel = document.querySelector('.testimonials-carousel');
     
-    if (index >= cards.length) {
+    if (!cards.length || !carousel) return;
+    
+    // Calculate how many cards to show based on screen size
+    const cardsToShow = window.innerWidth >= 768 ? 3 : 1;
+    const maxIndex = Math.max(0, cards.length - cardsToShow);
+    
+    // Wrap around or constrain index
+    if (index > maxIndex) {
         currentTestimonialIndex = 0;
     } else if (index < 0) {
-        currentTestimonialIndex = cards.length - 1;
+        currentTestimonialIndex = maxIndex;
+    } else {
+        currentTestimonialIndex = index;
     }
 
-    // For larger screens, show all cards
-    // For smaller screens, show one at a time
+    // For mobile screens, show one card at a time
     if (window.innerWidth < 768) {
         cards.forEach((card, i) => {
             card.style.display = i === currentTestimonialIndex ? 'block' : 'none';
         });
+        carousel.style.transform = 'translateX(0)';
+    } else {
+        // For desktop screens, slide the carousel
+        cards.forEach(card => {
+            card.style.display = 'flex';
+            card.style.flexDirection = 'column';
+        });
+        
+        // Calculate the slide offset
+        const container = carousel.parentElement;
+        const containerWidth = container.offsetWidth;
+        const cardWidth = cards[0].offsetWidth;
+        const gap = 32; // 2rem gap between cards
+        const offset = -(currentTestimonialIndex * (cardWidth + gap));
+        
+        carousel.style.transform = `translateX(${offset}px)`;
     }
 }
 
