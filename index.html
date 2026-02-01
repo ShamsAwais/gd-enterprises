@@ -39,28 +39,99 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Cash for Your Scrap!</h1>
-            <p>Get instant payment for your scrap with FREE doorstep pickup across Hyderabad</p>
-            <button class="cta-btn primary-btn" onclick="scrollToSection('contact')">Request Pickup</button>
-            <a href="tel:+918143695940" class="cta-btn secondary-btn">
-                <i class="fas fa-phone"></i> Call Now
-            </a>
-        </div>
-        <div class="hero-stats">
-            <div class="stat">
-                <h3>5000+</h3>
-                <p>Happy Customers</p>
+    <!-- Hero Carousel Section -->
+    <section id="home" class="hero-carousel">
+        <div class="carousel-container">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active" style="background-image: url('assets/carousel-slide-1.jpg');">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-content">
+                    <h1 class="animate-text">💰 Cash for Your Scrap! 💰</h1>
+                    <p class="animate-text">Turn Your Waste Into Wealth</p>
+                    <div class="carousel-buttons">
+                        <button class="cta-btn primary-btn" onclick="scrollToSection('contact')">Get Free Quote</button>
+                        <a href="tel:+918143695940" class="cta-btn secondary-btn">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="stat">
-                <h3>50+</h3>
-                <p>Neighborhoods Served</p>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide" style="background-image: url('assets/carousel-slide-2.jpg');">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-content">
+                    <h1 class="animate-text">♻️ Go Green, Earn Green! ♻️</h1>
+                    <p class="animate-text">Best Market Rates • Free Doorstep Pickup</p>
+                    <div class="carousel-buttons">
+                        <button class="cta-btn primary-btn" onclick="scrollToSection('services')">Our Services</button>
+                        <a href="https://wa.me/918143695940" target="_blank" class="cta-btn secondary-btn">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Us
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="stat">
-                <h3>100%</h3>
-                <p>Eco-Friendly</p>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide" style="background-image: url('assets/carousel-slide-3.png');">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-content">
+                    <h1 class="animate-text">⚡ Instant Payment Guaranteed! ⚡</h1>
+                    <p class="animate-text">Safe • Reliable • Trusted by 5000+ Customers</p>
+                    <div class="carousel-buttons">
+                        <button class="cta-btn primary-btn" onclick="scrollToSection('contact')">Request Pickup</button>
+                        <a href="tel:+918143695940" class="cta-btn secondary-btn">
+                            <i class="fas fa-phone"></i> 8143695940
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide" style="background-image: url('assets/carousel-slide-4.png');">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-content">
+                    <h1 class="animate-text">🏆 Hyderabad's #1 Scrap Buyers 🏆</h1>
+                    <p class="animate-text">Electronics • Metals • Furniture • Appliances & More</p>
+                    <div class="carousel-buttons">
+                        <button class="cta-btn primary-btn" onclick="scrollToSection('services')">View All Services</button>
+                        <a href="https://wa.me/918143695940" target="_blank" class="cta-btn secondary-btn">
+                            <i class="fab fa-whatsapp"></i> Chat Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-slide" style="background-image: url('assets/carousel-slide-5.jpg');">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-content">
+                    <h1 class="animate-text">🌍 Eco-Friendly Recycling Solutions 🌍</h1>
+                    <p class="animate-text">Save the Planet While Making Money</p>
+                    <div class="carousel-buttons">
+                        <button class="cta-btn primary-btn" onclick="scrollToSection('process')">How It Works</button>
+                        <a href="tel:+918143695940" class="cta-btn secondary-btn">
+                            <i class="fas fa-phone"></i> Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="carousel-arrow carousel-prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Dots Navigation -->
+            <div class="carousel-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+                <span class="dot" onclick="goToSlide(4)"></span>
             </div>
         </div>
     </section>

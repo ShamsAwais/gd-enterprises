@@ -17,6 +17,108 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // ========================================
+// Hero Carousel Functionality
+// ========================================
+
+let currentSlide = 0;
+let autoSlideInterval;
+const IDLE_TIME = 5000; // 10 seconds idle time before auto-slide
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (!slides.length) return;
+    
+    // Wrap around
+    if (index >= slides.length) currentSlide = 0;
+    else if (index < 0) currentSlide = slides.length - 1;
+    else currentSlide = index;
+    
+    // Remove active class from all slides and dots
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Add active class to current slide and dot
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+    resetAutoSlide();
+}
+
+function goToSlide(index) {
+    showSlide(index);
+    resetAutoSlide();
+}
+
+function autoSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(autoSlide, IDLE_TIME);
+}
+
+// Initialize carousel
+window.addEventListener('load', () => {
+    showSlide(0);
+    autoSlideInterval = setInterval(autoSlide, IDLE_TIME);
+});
+
+// Reset timer on any user interaction
+const carouselContainer = document.querySelector('.carousel-container');
+if (carouselContainer) {
+    // Reset on mouse hover
+    carouselContainer.addEventListener('mouseenter', () => {
+        clearInterval(autoSlideInterval);
+    });
+    
+    carouselContainer.addEventListener('mouseleave', () => {
+        resetAutoSlide();
+    });
+
+    // Reset on mouse click anywhere in carousel
+    carouselContainer.addEventListener('click', () => {
+        resetAutoSlide();
+    });
+
+    // Touch/Swipe Support for Mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carouselContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        clearInterval(autoSlideInterval); // Stop auto-slide when user touches
+    });
+
+    carouselContainer.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    carouselContainer.addEventListener('touchmove', () => {
+        clearInterval(autoSlideInterval); // Stop during swipe
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            // Swipe left - next slide
+            changeSlide(1);
+        } else if (touchEndX > touchStartX + 50) {
+            // Swipe right - previous slide
+            changeSlide(-1);
+        } else {
+            // No swipe detected, restart timer
+            resetAutoSlide();
+        }
+    }
+}
+
+// ========================================
 // Smooth Scroll to Section
 // ========================================
 
