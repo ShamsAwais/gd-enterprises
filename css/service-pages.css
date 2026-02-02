@@ -619,3 +619,11 @@ body[data-page="plastic-waste"] .service-hero {
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
                 url('../assets/HeroPlasticWasteBG.jpg') center/cover no-repeat;
 }
+/* Prices Page */
+body[data-page="prices"] .service-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
+                url('../assets/HeroPricesBG.jpg') center/cover no-repeat;
+}
+/* ========================================
+   End of Service Page Styles
+   ======================================== */
