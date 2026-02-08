@@ -619,6 +619,13 @@ body[data-page="plastic-waste"] .service-hero {
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
                 url('../assets/HeroPlasticWasteBG.jpg') center/cover no-repeat;
 }
+
+/* Waste Management Page */
+body[data-page="waste-management"] .service-hero {
+    background: linear-gradient(135deg, rgba(34, 139, 34, 0.4) 0%, rgba(0, 100, 0, 0.5) 100%),
+                url('../assets/HeroWasteManagementBG.jpg') center/cover no-repeat;
+}
+
 /* Prices Page */
 body[data-page="prices"] .service-hero {
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 51, 102, 0.5) 100%),
