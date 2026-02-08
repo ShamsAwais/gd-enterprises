@@ -9,10 +9,34 @@ mobileToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Close menu when a link is clicked
-document.querySelectorAll('.nav-links a').forEach(link => {
+// Dropdown menu toggle for mobile
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = toggle.closest('.dropdown');
+            dropdown.classList.toggle('active');
+        }
+    });
+});
+
+// Submenu toggle for mobile
+document.querySelectorAll('.dropdown-submenu > a').forEach(submenuLink => {
+    submenuLink.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const submenu = submenuLink.closest('.dropdown-submenu');
+            submenu.classList.toggle('active');
+        }
+    });
+});
+
+// Close menu when a submenu item is clicked
+document.querySelectorAll('.submenu-items a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+        document.querySelectorAll('.dropdown-submenu').forEach(s => s.classList.remove('active'));
     });
 });
 
