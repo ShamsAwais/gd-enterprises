@@ -1,6 +1,6 @@
 # G D Enterprises - Scrap Business Website
 
-A modern, responsive static website for a scrap buying business built with HTML, CSS, and JavaScript. Designed for mobile-first experience and easy deployment to GitHub Pages.
+A modern, responsive website for a scrap buying business built with HTML, CSS, JavaScript, and Firebase. Features a secure admin panel for real-time price management.
 
 ## Features
 
@@ -11,7 +11,8 @@ A modern, responsive static website for a scrap buying business built with HTML,
 
 📱 **Key Sections**
 - Hero Section with clear call-to-action
-- Services Grid (6 scrap categories)
+- Services Grid (11+ scrap categories)
+- Dynamic Pricing Page (Firebase-powered)
 - How It Works (3-step process)
 - Why Choose Us (6 differentiators)
 - Testimonials Carousel
@@ -31,19 +32,55 @@ A modern, responsive static website for a scrap buying business built with HTML,
 - Contact form with validation
 - Testimonials carousel
 - Scroll animations
+- **🔥 NEW: Dynamic Price Management System**
+
+## 🆕 Admin Panel - Price Management
+
+**Secure admin panel for updating scrap prices in real-time!**
+
+### Features:
+✅ **Password Protected** - Secure login system  
+✅ **Real-Time Updates** - Changes appear instantly  
+✅ **Easy to Use** - No coding required  
+✅ **Mobile Friendly** - Edit from anywhere  
+✅ **9 Categories** - Electronics, Metals, Plastics, Batteries, etc.  
+✅ **Add/Edit/Delete** - Full CRUD operations  
+✅ **Firebase Powered** - Free, secure, and fast  
+
+### Quick Setup:
+1. Follow **QUICKSTART.md** (5 minutes)
+2. Or see **FIREBASE_SETUP.md** for detailed guide
+3. Access admin panel at `/admin.html`
+
+### Documentation:
+- 📖 **QUICKSTART.md** - Get started in 5 minutes
+- 📚 **FIREBASE_SETUP.md** - Complete setup guide
+- 🎨 **ADMIN_FEATURES.md** - Feature overview
 
 ## Project Structure
 
 ```
 G D Enterprises/
-├── index.html           # Main HTML file
+├── index.html              # Main homepage
+├── prices.html             # Dynamic pricing page
+├── admin.html              # 🔐 Admin panel (password protected)
+├── [other service pages]   # Electronics, metals, etc.
 ├── css/
-│   └── styles.css      # All responsive styles
+│   ├── styles.css          # Main styles
+│   └── service-pages.css   # Service page styles
 ├── js/
-│   └── script.js       # JavaScript functionality
-├── assets/             # Folder for images (currently empty)
-├── .gitignore          # Git ignore file
-└── README.md           # This file
+│   ├── script.js           # Main functionality
+│   ├── firebase-config.js  # 🔥 Firebase configuration
+│   ├── admin-prices.js     # Admin panel logic
+│   └── load-prices.js      # Dynamic price loading
+├── data/
+│   └── prices.json         # Price data backup
+├── assets/                 # Images and media
+├── QUICKSTART.md           # 5-minute setup guide
+├── FIREBASE_SETUP.md       # Detailed Firebase guide
+├── ADMIN_FEATURES.md       # Admin panel overview
+├── .gitignore
+└── README.md               # This file
 ```
 
 ## Getting Started Locally

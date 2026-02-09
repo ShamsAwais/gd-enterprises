@@ -1,0 +1,95 @@
+{
+  "electronics": [
+    { "item": "Desktop Computers (Complete)", "condition": "Working/Non-Working", "rateRange": "₹500-2,000/unit" },
+    { "item": "Laptops", "condition": "Working/Non-Working", "rateRange": "₹800-5,000/unit" },
+    { "item": "Mobile Phones", "condition": "Working/Non-Working", "rateRange": "₹100-3,000/unit" },
+    { "item": "Computer Monitors (LCD/LED)", "condition": "Working", "rateRange": "₹200-800/unit" },
+    { "item": "Printers & Scanners", "condition": "Any Condition", "rateRange": "₹150-600/unit" },
+    { "item": "Keyboards & Mice", "condition": "Bulk Quantity", "rateRange": "₹10-50/unit" },
+    { "item": "E-Waste (Motherboards, CPUs)", "condition": "Mixed", "rateRange": "₹200-1,500/kg" }
+  ],
+  "metals": [
+    { "item": "Iron Scrap (Heavy)", "condition": "Clean, Heavy Metal", "rateRange": "₹28-35/kg" },
+    { "item": "Iron Scrap (Light)", "condition": "Thin Sheets, Tins", "rateRange": "₹20-28/kg" },
+    { "item": "Steel Scrap (MS)", "condition": "Mild Steel", "rateRange": "₹30-38/kg" },
+    { "item": "Stainless Steel (304)", "condition": "Clean SS", "rateRange": "₹180-220/kg" },
+    { "item": "Copper Wire (Clean)", "condition": "Pure Copper", "rateRange": "₹520-580/kg" },
+    { "item": "Copper Wire (Mixed)", "condition": "With Insulation", "rateRange": "₹300-420/kg" },
+    { "item": "Aluminum Scrap (Clean)", "condition": "Pure Aluminum", "rateRange": "₹140-170/kg" },
+    { "item": "Aluminum Utensils", "condition": "Old Vessels", "rateRange": "₹120-150/kg" },
+    { "item": "Brass Scrap", "condition": "Clean Brass", "rateRange": "₹320-380/kg" },
+    { "item": "Cast Iron", "condition": "Heavy Items", "rateRange": "₹25-32/kg" }
+  ],
+  "plastic": [
+    { "item": "PET Bottles (Type 1)", "condition": "Clean, Sorted", "rateRange": "₹25-35/kg" },
+    { "item": "HDPE Plastic", "condition": "Industrial Grade", "rateRange": "₹30-40/kg" },
+    { "item": "PP Plastic (Type 5)", "condition": "Mixed Colors", "rateRange": "₹20-30/kg" },
+    { "item": "PVC Plastic", "condition": "Pipes & Fittings", "rateRange": "₹15-25/kg" },
+    { "item": "ABS/Engineering Plastic", "condition": "Clean", "rateRange": "₹40-60/kg" },
+    { "item": "Mixed Plastic Waste", "condition": "Bulk, Unsorted", "rateRange": "₹10-20/kg" },
+    { "item": "Plastic Containers", "condition": "Food Grade", "rateRange": "₹18-28/kg" },
+    { "item": "Plastic Film/Sheets", "condition": "Industrial", "rateRange": "₹12-22/kg" }
+  ],
+  "batteries": [
+    { "item": "Car Battery (Lead-Acid)", "condition": "Standard 12V", "rateRange": "₹120-160/kg" },
+    { "item": "Car Battery (Lead-Acid)", "condition": "Per Unit (Average)", "rateRange": "₹1,800-2,500/unit" },
+    { "item": "Inverter Battery", "condition": "150Ah-200Ah", "rateRange": "₹2,500-4,000/unit" },
+    { "item": "UPS Battery", "condition": "Small to Medium", "rateRange": "₹800-1,500/unit" },
+    { "item": "Industrial Battery", "condition": "Large Capacity", "rateRange": "₹130-180/kg" },
+    { "item": "Bike Battery", "condition": "12V Small", "rateRange": "₹300-600/unit" },
+    { "item": "Battery Plates (Lead)", "condition": "Scrap Lead", "rateRange": "₹140-180/kg" }
+  ],
+  "paper": [
+    { "item": "Old Newspapers", "condition": "Clean, Bundled", "rateRange": "₹12-16/kg" },
+    { "item": "Magazines & Glossy Paper", "condition": "Mixed", "rateRange": "₹8-12/kg" },
+    { "item": "Old Books (Regular)", "condition": "Paperback Books", "rateRange": "₹10-14/kg" },
+    { "item": "Notebooks & Copies", "condition": "Used School Books", "rateRange": "₹8-12/kg" },
+    { "item": "Cardboard Boxes", "condition": "Clean, Folded", "rateRange": "₹10-14/kg" },
+    { "item": "Brown Cartons", "condition": "Heavy Duty", "rateRange": "₹12-16/kg" },
+    { "item": "Office Paper (White)", "condition": "A4, Clean", "rateRange": "₹14-18/kg" },
+    { "item": "Mixed Paper Waste", "condition": "Bulk, Unsorted", "rateRange": "₹6-10/kg" },
+    { "item": "Hard Cover Books", "condition": "With Hard Cover", "rateRange": "₹6-10/kg" }
+  ],
+  "appliances": [
+    { "item": "Window AC (Non-Working)", "condition": "1.0-1.5 Ton", "rateRange": "₹2,000-4,000/unit" },
+    { "item": "Split AC (Non-Working)", "condition": "1.0-1.5 Ton", "rateRange": "₹2,500-5,000/unit" },
+    { "item": "Window AC (Working)", "condition": "1.0-1.5 Ton", "rateRange": "₹4,000-8,000/unit" },
+    { "item": "Split AC (Working)", "condition": "1.0-1.5 Ton", "rateRange": "₹5,000-10,000/unit" },
+    { "item": "Refrigerator (Single Door)", "condition": "150-250L", "rateRange": "₹1,500-3,500/unit" },
+    { "item": "Refrigerator (Double Door)", "condition": "250-350L", "rateRange": "₹2,500-5,000/unit" },
+    { "item": "Washing Machine (Top Load)", "condition": "6-7 kg", "rateRange": "₹1,200-2,500/unit" },
+    { "item": "Washing Machine (Front Load)", "condition": "6-7 kg", "rateRange": "₹1,500-3,000/unit" },
+    { "item": "Microwave Oven", "condition": "Any Size", "rateRange": "₹500-1,200/unit" },
+    { "item": "Water Heater (Geyser)", "condition": "15-25L", "rateRange": "₹400-1,000/unit" }
+  ],
+  "furniture": [
+    { "item": "Wooden Furniture", "condition": "Good Quality Wood", "rateRange": "₹15-35/kg" },
+    { "item": "Wooden Furniture", "condition": "Per Item (Average)", "rateRange": "₹500-3,000/piece" },
+    { "item": "Metal Furniture", "condition": "Iron/Steel Frames", "rateRange": "₹25-35/kg" },
+    { "item": "Office Chairs", "condition": "With Metal Base", "rateRange": "₹200-800/unit" },
+    { "item": "Office Tables", "condition": "Wooden/Metal", "rateRange": "₹500-2,500/unit" },
+    { "item": "Almirah/Wardrobes", "condition": "Large Size", "rateRange": "₹1,000-4,000/unit" },
+    { "item": "Sofa Sets", "condition": "Wooden Frame", "rateRange": "₹1,500-5,000/set" }
+  ],
+  "vehicle": [
+    { "item": "Car Scrap (Full Vehicle)", "condition": "Per Ton", "rateRange": "₹25,000-35,000/ton" },
+    { "item": "Bike Scrap (Full)", "condition": "Old Two-Wheeler", "rateRange": "₹2,000-5,000/unit" },
+    { "item": "Car Engine (Scrap)", "condition": "Non-Working", "rateRange": "₹3,000-8,000/unit" },
+    { "item": "Radiator", "condition": "Copper/Aluminum", "rateRange": "₹200-600/kg" },
+    { "item": "Catalytic Converter", "condition": "With Precious Metals", "rateRange": "₹2,000-8,000/unit" },
+    { "item": "Alloy Wheels", "condition": "Aluminum", "rateRange": "₹120-180/kg" },
+    { "item": "Steel Wheels/Rims", "condition": "Iron/Steel", "rateRange": "₹25-35/kg" },
+    { "item": "Used Tires", "condition": "Scrap Rubber", "rateRange": "₹15-30/kg" }
+  ],
+  "electrical": [
+    { "item": "Copper Wire (Bare)", "condition": "Pure Copper", "rateRange": "₹520-580/kg" },
+    { "item": "Copper Wire (Insulated)", "condition": "With PVC Cover", "rateRange": "₹300-420/kg" },
+    { "item": "Aluminum Wire", "condition": "Bare/Insulated", "rateRange": "₹140-170/kg" },
+    { "item": "Electrical Cables (Mixed)", "condition": "House Wiring", "rateRange": "₹200-350/kg" },
+    { "item": "Electric Motors", "condition": "Small to Medium", "rateRange": "₹80-150/kg" },
+    { "item": "Ceiling Fans", "condition": "Old/Non-Working", "rateRange": "₹150-350/unit" },
+    { "item": "Transformers", "condition": "With Copper Coils", "rateRange": "₹200-400/kg" },
+    { "item": "Inverters/UPS", "condition": "Old Units", "rateRange": "₹500-1,500/unit" },
+    { "item": "Electrical Panels", "condition": "With Components", "rateRange": "₹100-250/kg" }
+  ]
+}
