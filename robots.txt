@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin.html
+Disallow: /js/firebase-config.js
+Disallow: /js/admin-prices.js
+
+Sitemap: https://www.scrapdealerhyderabad.com/sitemap.xml
