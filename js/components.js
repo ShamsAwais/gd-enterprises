@@ -70,6 +70,7 @@
                 ['#commercial-waste','Commercial Waste'],['#organic-waste','Organic Waste']])
             + '</ul></li>'
             + '<li><a href="' + R + 'prices.html">Prices</a></li>'
+            + '<li><a href="' + R + 'blog/">Blog</a></li>'
             + '<li><a href="' + R + 'index.html#contact">Contact</a></li>'
             + '</ul>'
             + '</div></div></nav>';
